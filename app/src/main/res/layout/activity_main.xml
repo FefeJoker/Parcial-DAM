@@ -14,12 +14,13 @@
         android:editable="false"
         android:text="Guardar y recuper item con texto y booleano" />
 
-    <TextView
+    <EditText
         android:id="@+id/texto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:editable="true"
-        android:text="Texto para ingresar" />
+        android:ems="10"
+        android:hint="Texto para ingresar"
+        android:inputType="textPersonName" />
 
     <RadioButton
         android:id="@+id/booleano"

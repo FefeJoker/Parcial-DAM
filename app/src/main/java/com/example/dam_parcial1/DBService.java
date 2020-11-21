@@ -19,15 +19,9 @@ public class DBService extends IntentService {
         db.entityDao().insertEntityParcial(ep);
     }
 
-    public ArrayList<EntityParcial> getAllEntities(){
+    public EntityParcial[] getAllEntities(){
         EntityParcialDatabase db = EntityParcialDatabase.getInstance(this);
 
-        EntityParcial[] aux = db.entityDao().getAllEntityParcial();
-        ArrayList<EntityParcial> resultado = new ArrayList<EntityParcial>();
-
-        for(int i = 0 ; i < aux.length ; i++){
-            resultado.add(aux[i]);
-        }
-        return resultado;
+        return db.entityDao().getAllEntityParcial();
     }
 }

@@ -6,8 +6,9 @@ import androidx.room.Query;
 
 @Dao
 public interface EntityParcialDAO {
-    @Insert()
+    @Insert
     void insertEntityParcial(EntityParcial ep);
+
     @Query("SELECT * FROM EntityParcial")
     EntityParcial[] getAllEntityParcial();
 }
