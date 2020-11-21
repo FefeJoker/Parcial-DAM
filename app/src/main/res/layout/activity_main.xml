@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:text="Guardar y recuper item con texto y booleano" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:text="Texto para ingresar" />
+
+    <RadioButton
+        android:id="@+id/booleano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booleano para ingresar" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="guardarListener"
+        android:text="Guardar" />
+
+    <Button
+        android:id="@+id/recuperar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="recuperarListener"
+        android:text="Recuperar" />
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
